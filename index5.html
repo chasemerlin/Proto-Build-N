@@ -11,7 +11,9 @@
     <link href="css/font-awesome.css" rel="stylesheet">
     <link href="css/style3.css" rel="stylesheet" media="screen">
     <link href="css/dummie.css" rel="stylesheet" media="screen">
-    
+    <link rel="stylesheet" href="http://code.jquery.com/ui/1.10.3/themes/smoothness/jquery-ui.css" />
+    <link rel="stylesheet" href="/resources/demos/style.css" />
+
     <!--[if IE 7]>
       <link href="css/font-awesome-ie7.min.css" rel="stylesheet">
     <![endif]-->
@@ -22,6 +24,13 @@
     
     <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
     <script type="text/javascript" src="js/modernizr.js"></script>
+    <script src="http://code.jquery.com/jquery-1.9.1.js"></script>
+    <script src="http://code.jquery.com/ui/1.10.3/jquery-ui.js"></script>
+    <script>
+    $(function() {
+      $( "#datepicker" ).datepicker();
+    });
+    </script>
   
   </head>
 
@@ -71,13 +80,257 @@
       <!-- /**Calendar SECTION** -->
 
 
-      <div class="calendar">
-        <h3 class="calendar-title">TO DO Today</h3>
-        <div class="row-fluid">
-          <div class="span10 offset1 current-day">
-            <h4 class="list-item-header current-day-title">Thursday:</h4>
+        <div class="calendar">
 
-    <!-- USER JAMES -->
+          
+          <div class="well calendar-box">
+            <h4 class="calendar-header offset4"><i class="icon-arrow-left"></i>Thursday  7/24<i class="icon-arrow-right"></i></h4>
+
+            <p class="offset5">Date: <input type="text" id="datepicker" /></p>
+          </div>
+
+          <div class="row-fluid">
+            <div class="span10 offset1 current-day">
+
+              <ul class="nav nav-tabs">
+                <li id="jamesTab" class="active"><a href="#caljames" data-toggle="tab"><h3 class="font">James</h3></a></li>
+                <li id="chaseTab"><a href="#calchase" data-toggle="tab"><h3 class="font">Chase</h3></a>
+                </li>
+                <li id="chrisTab"><a href="#calchris" data-toggle="tab"><h3 class="font">Chris</h3></a>
+                </li>
+                <li id="allTab"><a href="#calall" data-toggle="tab"><h3 class="font">All</h3></a>
+                </li>
+              </ul>
+
+    <div id="myTabContent" class="tab-content">
+      <div class="tab-pane active" id="caljames">
+
+      <!-- USER JAMES -->
+
+              <div class="span12 current-day-item active">  
+                <ul class="day-list">
+                  <li class="day-item">
+                    <a href="#myModal1" role="button" class="" data-toggle="modal"><i class="icon-check"></i><h6 class="font">Make list of possible projects</h6><span class="weight">12%</span><span class="skill">UI</span><span class="link">Link to my drawings.</span></a>
+                  </li>
+                  <li class="day-item">  
+                    <a href="#myModal2" role="button" class="" data-toggle="modal"><i class="icon-check"></i><h6 class="font">Make lean canvas for favorite two project ideas</h6><span class="weight">14%</span><span class="skill">SEM</span><span class="link">Link to my drawings.</span></a>
+                  </li>
+                  <li class="day-item">
+                    <a href="#myModal4" role="button" class="" data-toggle="modal"><h6 class="font">Collab</h6><span class="weight">11%</span><span class="skill">PR</span></a>
+                  </li>
+                </ul>
+               
+      <!-- Modal -->
+
+              <div id="myModal1" class="modal hide fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+                <div class="modal-header">
+                  <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+                  <h3 id="myModalLabel">Meet with professor for data visulization feedback</h3>
+                </div>
+                <!-- put weighting here maybe -->
+                <div class="completion">
+                  <ul class="pic-list">
+                    <li>
+                      <i class="icon-ok"></i>
+                      <img class="user-image-comment" src="img/jamesavatar.png">
+                    </li>
+                    <li>
+                      <i class="icon-remove"></i>
+                      <img class="user-image-comment" src="img/chris.jpg">
+                    </li>
+                    <li class="task-points-value">
+                      <span>6 UI Points</span>
+                    </li>
+                  </ul>
+                </div>
+                <div class="modal-body">
+                  <p>One fine body.  This is the body of the super pertinent, but sleepy article chase sent.</p>
+                </div>
+                <div class="">
+                  <ul class="comments well">
+                    <li class="modal-comment"><span class="modal-comment-user">Chase:</span>  It real does make me sleepy</li>
+                    <li class="modal-comment"><span class="modal-comment-user">Chris:</span>  I thought it was pretty informative though</li>
+                    <li class="modal-comment"><span class="modal-comment-user">Chase:</span>  Well I'm glad you liked it</li>
+                    <li class="modal-comment"><span class="modal-comment-user">James:</span>  This totes def applies to my LSM work</li>
+                    <li class="modal-comment"><span class="modal-comment-user">Chase:</span>  WOW this was a super productive thread</li>
+                  </ul>
+                <button class="btn btn-primary btn-small add-comments-button">+ Comment</button>
+                </div>
+                <div class="modal-footer">
+                  <button class="btn" data-dismiss="modal" aria-hidden="true">Close</button>
+                  <button class="btn btn-primary">Save changes</button>
+                </div>
+              </div><!-- myModal -->
+
+      <!-- Modal -->
+
+              <div id="myModal2" class="modal hide fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+                <div class="modal-header">
+                  <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+                  <h3 id="myModalLabel">Make lean canvas for favorite two project ideas</h3>
+                </div>
+                <div class="modal-body">
+                  <p>Drew up some dope UI funcationailty</p>
+                </div>
+                <div class="modal-footer">
+                  <button class="btn" data-dismiss="modal" aria-hidden="true">Close</button>
+                  <button class="btn btn-primary">Save changes</button>
+                </div>
+              </div><!-- myModal -->
+
+      <!-- Modal -->
+
+              <div id="myModal3" class="modal hide fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+                <div class="modal-header">
+                  <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+                  <h3 id="myModalLabel">Meet with professor for data visulization feedback</h3>
+                </div>
+                <div class="modal-body">
+                  <p>Make sure errr thang is done before meeting and posted on web</p>
+                </div>
+                <div class="modal-footer">
+                  <button class="btn" data-dismiss="modal" aria-hidden="true">Close</button>
+                  <button class="btn btn-primary">Save changes</button>
+                </div>
+              </div><!-- myModal -->
+            </div><!-- User Span -->
+
+      <!-- USER CHASE -->
+
+      </div><!-- Tab-James -->
+      <div class="tab-pane" id="calchase">
+
+              <div class="span12 current-day-item"> 
+                <ul class="day-list">
+                  <li class="day-item"> 
+                    <a href="#myModal1" role="button" class="" data-toggle="modal"><i class="icon-check"></i><h6 class="font">Make list of possible project</h6></a>
+                  </li>
+                  <li class="day-item"> 
+                    <a href="#myModal2" role="button" class="" data-toggle="modal"><h6 class="font">Research pricing models for SaaS learning software</h6></a>
+                  </li>
+                  <li class="day-item"> 
+                    <a href="#myModal4" role="button" class="" data-toggle="modal"><h6 class="font">Prioritize assumptions by risk</h6></a>
+                  </li>
+                </ul>
+                       
+      <!-- Modal -->
+
+                <div id="myModal1" class="modal hide fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+                  <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+                    <h3 id="myModalLabel">Make list of possible project</h3>
+                  </div>
+                  <div class="modal-body">
+                    <p>One fine body.  This is the body of the super pertinent, but sleepy article chase sent.</p>
+                  </div>
+                  <div class="modal-footer">
+                    <button class="btn" data-dismiss="modal" aria-hidden="true">Close</button>
+                    <button class="btn btn-primary">Save changes</button>
+                  </div>
+                </div><!-- myModal -->
+
+      <!-- Modal -->
+
+                <div id="myModal2" class="modal hide fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+                  <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+                    <h3 id="myModalLabel">Research pricing models for SaaS learning software</h3>
+                  </div>
+                  <div class="modal-body">
+                    <p>Worked on setting up the base and css docs.</p>
+                  </div>
+                  <div class="modal-footer">
+                    <button class="btn" data-dismiss="modal" aria-hidden="true">Close</button>
+                    <button class="btn btn-primary">Save changes</button>
+                  </div>
+                </div><!-- myModal -->
+
+      <!-- Modal -->
+
+                <div id="myModal4" class="modal hide fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+                  <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+                    <h3 id="myModalLabel">Prioritize assumptions by risk</h3>
+                  </div>
+                  <div class="modal-body">
+                    <p>Make sure err thang is done before meeting and posted on web</p>
+                  </div>
+                  <div class="modal-footer">
+                    <button class="btn" data-dismiss="modal" aria-hidden="true">Close</button>
+                    <button class="btn btn-primary">Save changes</button>
+                  </div>
+                </div><!-- myModal -->
+              </div><!-- User Span -->
+
+      <!-- USER CHRIS -->
+
+      </div><!-- Tab-Chase -->
+      <div class="tab-pane" id="calchris">
+
+                <div class="span12 current-day-item">  
+                  <ul class="day-list">
+                    <li class="day-item"> 
+                      <a href="#myModal1" role="button" class="" data-toggle="modal"><h6 class="font">Make lean canvas for favorite two project ideas</h6></a>
+                    </li>
+                    <li class="day-item">
+                      <a href="#myModal2" role="button" class="" data-toggle="modal"><h6 class="font">Complete variation canvas for investment/finance startup</h6></a>
+                    </li>
+                    <li class="day-item"> 
+                      <a href="#myModal4" role="button" class="" data-toggle="modal"><h6 class="font"s>Research existing investment/finance startups solutions</h6></a>
+                    </li>
+                  </ul>
+                 
+      <!-- Modal -->
+                <div id="myModal1" class="modal hide fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+                  <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+                    <h3 id="myModalLabel">Make lean canvas for favorite two project ideas</h3>
+                  </div>
+                  <div class="modal-body">
+                    <p>One fine body.  This is the body of the super pertinent, but sleepy article chase sent.</p>
+                  </div>
+                  <div class="modal-footer">
+                    <button class="btn" data-dismiss="modal" aria-hidden="true">Close</button>
+                    <button class="btn btn-primary">Save changes</button>
+                  </div>
+                </div>
+
+      <!-- myModal -->
+
+                <div id="myModal2" class="modal hide fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+                  <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+                    <h3 id="myModalLabel">Complete variation canvas for investment/finance startup</h3>
+                  </div>
+                  <div class="modal-body">
+                    <p>Worked on setting up the base and css docs.</p>
+                  </div>
+                  <div class="modal-footer">
+                    <button class="btn" data-dismiss="modal" aria-hidden="true">Close</button>
+                    <button class="btn btn-primary">Save changes</button>
+                  </div>
+                </div>
+
+      <!-- myModal -->
+
+                <div id="myModal4" class="modal hide fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+                  <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+                    <h3 id="myModalLabel">Research existing investment/finance startups solutions</h3>
+                  </div>
+                  <div class="modal-body">
+                    <p>Make sure err thang is done before meeting and posted on web</p>
+                  </div>
+                  <div class="modal-footer">
+                    <button class="btn" data-dismiss="modal" aria-hidden="true">Close</button>
+                    <button class="btn btn-primary">Save changes</button>
+                  </div>
+                </div><!-- myModal -->
+              </div><!-- User Span -->
+
+
+      </div><!-- Tab-Chris -->
+      <div class="tab-pane" id="calall">
 
             <div class="span4 current-day-item">
               <ul class="list">
@@ -94,125 +347,59 @@
                   <a href="#myModal4" role="button" class="" data-toggle="modal"><h6 class="font">Collab</h6></a>
                 </li>
               </ul>
-             
-    <!-- Modal -->
 
-            <div id="myModal1" class="modal hide fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
-              <div class="modal-header">
-                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
-                <h3 id="myModalLabel">Meet with professor for data visulization feedback</h3>
-              </div>
-              <!-- put weighting here maybe -->
-              <div class="completion">
-                <ul class="pic-list">
-                  <li>
-                    <i class="icon-ok"></i>
-                    <img class="user-image-comment" src="img/jamesavatar.png">
-                  </li>
-                  <li>
-                    <i class="icon-remove"></i>
-                    <img class="user-image-comment" src="img/chris.jpg">
-                  </li>
-                  <li class="task-points-value">
-                    <span>6 UI Points</span>
-                  </li>
-                </ul>
-              </div>
-              <div class="modal-body">
-                <p>One fine body.  This is the body of the super pertinent, but sleepy article chase sent.</p>
-              </div>
-              <div class="">
-                <ul class="comments well">
-                  <li class="modal-comment"><span class="modal-comment-user">Chase:</span>  It real does make me sleepy</li>
-                  <li class="modal-comment"><span class="modal-comment-user">Chris:</span>  I thought it was pretty informative though</li>
-                  <li class="modal-comment"><span class="modal-comment-user">Chase:</span>  Well I'm glad you liked it</li>
-                  <li class="modal-comment"><span class="modal-comment-user">James:</span>  This totes def applies to my LSM work</li>
-                  <li class="modal-comment"><span class="modal-comment-user">Chase:</span>  WOW this was a super productive thread</li>
-                </ul>
-              <button class="btn btn-primary btn-small add-comments-button">+ Comment</button>
-              </div>
-              <div class="modal-footer">
-                <button class="btn" data-dismiss="modal" aria-hidden="true">Close</button>
-                <button class="btn btn-primary">Save changes</button>
-              </div>
-            </div><!-- myModal -->
-
-    <!-- Modal -->
-
-            <div id="myModal2" class="modal hide fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
-              <div class="modal-header">
-                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
-                <h3 id="myModalLabel">Make lean canvas for favorite two project ideas</h3>
-              </div>
-              <div class="modal-body">
-                <p>Drew up some dope UI funcationailty</p>
-              </div>
-              <div class="modal-footer">
-                <button class="btn" data-dismiss="modal" aria-hidden="true">Close</button>
-                <button class="btn btn-primary">Save changes</button>
-              </div>
-            </div><!-- myModal -->
-
-    <!-- Modal -->
-
-            <div id="myModal3" class="modal hide fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
-              <div class="modal-header">
-                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
-                <h3 id="myModalLabel">Meet with professor for data visulization feedback</h3>
-              </div>
-              <div class="modal-body">
-                <p>Make sure errr thang is done before meeting and posted on web</p>
-              </div>
-              <div class="modal-footer">
-                <button class="btn" data-dismiss="modal" aria-hidden="true">Close</button>
-                <button class="btn btn-primary">Save changes</button>
-              </div>
-            </div><!-- myModal -->
-          </div><!-- User Span -->
-
-    <!-- USER CHASE -->
-
-            <div class="span4 current-day-item">
-              <ul class="list">
-                <li class="list-item-header">Chase</li>
-              </ul>   
-              <ul class="day-list">
-                <li class="day-item"> 
-                  <a href="#myModal1" role="button" class="" data-toggle="modal"><i class="icon-check"></i><h6 class="font">Make list of possible project</h6></a>
-                </li>
-                <li class="day-item"> 
-                  <a href="#myModal2" role="button" class="" data-toggle="modal"><h6 class="font">Research pricing models for SaaS learning software</h6></a>
-                </li>
-                <li class="day-item"> 
-                  <a href="#myModal4" role="button" class="" data-toggle="modal"><h6 class="font">Prioritize assumptions by risk</h6></a>
-                </li>
-              </ul>
-                     
-    <!-- Modal -->
+               
+      <!-- Modal -->
 
               <div id="myModal1" class="modal hide fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
                 <div class="modal-header">
                   <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
-                  <h3 id="myModalLabel">Make list of possible project</h3>
+                  <h3 id="myModalLabel">Meet with professor for data visulization feedback</h3>
+                </div>
+                <!-- put weighting here maybe -->
+                <div class="completion">
+                  <ul class="pic-list">
+                    <li>
+                      <i class="icon-ok"></i>
+                      <img class="user-image-comment" src="img/jamesavatar.png">
+                    </li>
+                    <li>
+                      <i class="icon-remove"></i>
+                      <img class="user-image-comment" src="img/chris.jpg">
+                    </li>
+                    <li class="task-points-value">
+                      <span>6 UI Points</span>
+                    </li>
+                  </ul>
                 </div>
                 <div class="modal-body">
                   <p>One fine body.  This is the body of the super pertinent, but sleepy article chase sent.</p>
                 </div>
+                <div class="">
+                  <ul class="comments well">
+                    <li class="modal-comment"><span class="modal-comment-user">Chase:</span>  It real does make me sleepy</li>
+                    <li class="modal-comment"><span class="modal-comment-user">Chris:</span>  I thought it was pretty informative though</li>
+                    <li class="modal-comment"><span class="modal-comment-user">Chase:</span>  Well I'm glad you liked it</li>
+                    <li class="modal-comment"><span class="modal-comment-user">James:</span>  This totes def applies to my LSM work</li>
+                    <li class="modal-comment"><span class="modal-comment-user">Chase:</span>  WOW this was a super productive thread</li>
+                  </ul>
+                <button class="btn btn-primary btn-small add-comments-button">+ Comment</button>
+                </div>
                 <div class="modal-footer">
                   <button class="btn" data-dismiss="modal" aria-hidden="true">Close</button>
                   <button class="btn btn-primary">Save changes</button>
                 </div>
               </div><!-- myModal -->
 
-    <!-- Modal -->
+      <!-- Modal -->
 
               <div id="myModal2" class="modal hide fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
                 <div class="modal-header">
                   <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
-                  <h3 id="myModalLabel">Research pricing models for SaaS learning software</h3>
+                  <h3 id="myModalLabel">Make lean canvas for favorite two project ideas</h3>
                 </div>
                 <div class="modal-body">
-                  <p>Worked on setting up the base and css docs.</p>
+                  <p>Drew up some dope UI funcationailty</p>
                 </div>
                 <div class="modal-footer">
                   <button class="btn" data-dismiss="modal" aria-hidden="true">Close</button>
@@ -220,15 +407,15 @@
                 </div>
               </div><!-- myModal -->
 
-    <!-- Modal -->
+      <!-- Modal -->
 
-              <div id="myModal4" class="modal hide fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+              <div id="myModal3" class="modal hide fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
                 <div class="modal-header">
                   <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
-                  <h3 id="myModalLabel">Prioritize assumptions by risk</h3>
+                  <h3 id="myModalLabel">Meet with professor for data visulization feedback</h3>
                 </div>
                 <div class="modal-body">
-                  <p>Make sure err thang is done before meeting and posted on web</p>
+                  <p>Make sure errr thang is done before meeting and posted on web</p>
                 </div>
                 <div class="modal-footer">
                   <button class="btn" data-dismiss="modal" aria-hidden="true">Close</button>
@@ -237,7 +424,76 @@
               </div><!-- myModal -->
             </div><!-- User Span -->
 
-    <!-- USER CHRIS -->
+      <!-- USER CHASE -->
+
+
+              <div class="span4 current-day-item">
+                <ul class="list">
+                  <li class="list-item-header">Chase</li>
+                </ul>   
+                <ul class="day-list">
+                  <li class="day-item"> 
+                    <a href="#myModal1" role="button" class="" data-toggle="modal"><i class="icon-check"></i><h6 class="font">Make list of possible project</h6></a>
+                  </li>
+                  <li class="day-item"> 
+                    <a href="#myModal2" role="button" class="" data-toggle="modal"><h6 class="font">Research pricing models for SaaS learning software</h6></a>
+                  </li>
+                  <li class="day-item"> 
+                    <a href="#myModal4" role="button" class="" data-toggle="modal"><h6 class="font">Prioritize assumptions by risk</h6></a>
+                  </li>
+                </ul>
+                       
+      <!-- Modal -->
+
+                <div id="myModal1" class="modal hide fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+                  <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+                    <h3 id="myModalLabel">Make list of possible project</h3>
+                  </div>
+                  <div class="modal-body">
+                    <p>One fine body.  This is the body of the super pertinent, but sleepy article chase sent.</p>
+                  </div>
+                  <div class="modal-footer">
+                    <button class="btn" data-dismiss="modal" aria-hidden="true">Close</button>
+                    <button class="btn btn-primary">Save changes</button>
+                  </div>
+                </div><!-- myModal -->
+
+      <!-- Modal -->
+
+                <div id="myModal2" class="modal hide fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+                  <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+                    <h3 id="myModalLabel">Research pricing models for SaaS learning software</h3>
+                  </div>
+                  <div class="modal-body">
+                    <p>Worked on setting up the base and css docs.</p>
+                  </div>
+                  <div class="modal-footer">
+                    <button class="btn" data-dismiss="modal" aria-hidden="true">Close</button>
+                    <button class="btn btn-primary">Save changes</button>
+                  </div>
+                </div><!-- myModal -->
+
+      <!-- Modal -->
+
+                <div id="myModal4" class="modal hide fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+                  <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+                    <h3 id="myModalLabel">Prioritize assumptions by risk</h3>
+                  </div>
+                  <div class="modal-body">
+                    <p>Make sure err thang is done before meeting and posted on web</p>
+                  </div>
+                  <div class="modal-footer">
+                    <button class="btn" data-dismiss="modal" aria-hidden="true">Close</button>
+                    <button class="btn btn-primary">Save changes</button>
+                  </div>
+                </div><!-- myModal -->
+              </div><!-- User Span -->
+
+      <!-- USER CHRIS -->
+
 
               <div class="span4 current-day-item">
                 <ul class="list">
@@ -254,57 +510,62 @@
                     <a href="#myModal4" role="button" class="" data-toggle="modal"><h6 class="font"s>Research existing investment/finance startups solutions</h6></a>
                   </li>
                 </ul>
-               
-    <!-- Modal -->
-              <div id="myModal1" class="modal hide fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
-                <div class="modal-header">
-                  <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
-                  <h3 id="myModalLabel">Make lean canvas for favorite two project ideas</h3>
-                </div>
-                <div class="modal-body">
-                  <p>One fine body.  This is the body of the super pertinent, but sleepy article chase sent.</p>
-                </div>
-                <div class="modal-footer">
-                  <button class="btn" data-dismiss="modal" aria-hidden="true">Close</button>
-                  <button class="btn btn-primary">Save changes</button>
-                </div>
-              </div>
 
-    <!-- myModal -->
+                 
+      <!-- Modal -->
+                <div id="myModal1" class="modal hide fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+                  <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+                    <h3 id="myModalLabel">Make lean canvas for favorite two project ideas</h3>
+                  </div>
+                  <div class="modal-body">
+                    <p>One fine body.  This is the body of the super pertinent, but sleepy article chase sent.</p>
+                  </div>
+                  <div class="modal-footer">
+                    <button class="btn" data-dismiss="modal" aria-hidden="true">Close</button>
+                    <button class="btn btn-primary">Save changes</button>
+                  </div>
+                </div>
 
-              <div id="myModal2" class="modal hide fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
-                <div class="modal-header">
-                  <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
-                  <h3 id="myModalLabel">Complete variation canvas for investment/finance startup</h3>
-                </div>
-                <div class="modal-body">
-                  <p>Worked on setting up the base and css docs.</p>
-                </div>
-                <div class="modal-footer">
-                  <button class="btn" data-dismiss="modal" aria-hidden="true">Close</button>
-                  <button class="btn btn-primary">Save changes</button>
-                </div>
-              </div>
+      <!-- myModal -->
 
-    <!-- myModal -->
+                <div id="myModal2" class="modal hide fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+                  <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+                    <h3 id="myModalLabel">Complete variation canvas for investment/finance startup</h3>
+                  </div>
+                  <div class="modal-body">
+                    <p>Worked on setting up the base and css docs.</p>
+                  </div>
+                  <div class="modal-footer">
+                    <button class="btn" data-dismiss="modal" aria-hidden="true">Close</button>
+                    <button class="btn btn-primary">Save changes</button>
+                  </div>
+                </div>
 
-              <div id="myModal4" class="modal hide fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
-                <div class="modal-header">
-                  <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
-                  <h3 id="myModalLabel">Research existing investment/finance startups solutions</h3>
-                </div>
-                <div class="modal-body">
-                  <p>Make sure err thang is done before meeting and posted on web</p>
-                </div>
-                <div class="modal-footer">
-                  <button class="btn" data-dismiss="modal" aria-hidden="true">Close</button>
-                  <button class="btn btn-primary">Save changes</button>
-                </div>
-              </div><!-- myModal -->
-            </div><!-- User Span -->
-          </div><!-- Span -->
-        </div><!-- Row-Fluid -->
-      </div><!-- Calendar -->
+      <!-- myModal -->
+
+                <div id="myModal4" class="modal hide fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+                  <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+                    <h3 id="myModalLabel">Research existing investment/finance startups solutions</h3>
+                  </div>
+                  <div class="modal-body">
+                    <p>Make sure err thang is done before meeting and posted on web</p>
+                  </div>
+                  <div class="modal-footer">
+                    <button class="btn" data-dismiss="modal" aria-hidden="true">Close</button>
+                    <button class="btn btn-primary">Save changes</button>
+                  </div>
+                </div><!-- myModal -->
+              </div><!-- User Span -->
+      </div><!-- Tab-All -->
+    </div><!-- Content -->
+    </div><!-- Row-Fluid -->
+
+        </div><!-- Calendar -->
+
+
 
 
       <!-- /**TOGGLE SECTION** -->
@@ -378,8 +639,28 @@
                         <li class="learning-tree-item"><i class="icon-check"></i>
                           <a href="#myModal" role="button" class="font" data-toggle="modal">Make list of possible project<span class="date-time">7/16</span></a>
                         </li>
-                        <li class="learning-tree-item"><i class="icon-check"></i>Make lean canvas for favorite two project ideas<span class="date-time">7/16</span></li>
+
+                        
+
+                        <li class="learning-tree-item">
+                          <i class="icon-check"></i>
+                          <a href="#" rel="tooltip" title="Hover text here" class="font">linked text here</a>
+                          <span class="date-time">7/16</span>
+
+                          <script type="text/javascript">
+                          $(function () {
+                          $("[rel='tooltip']").tooltip();
+                          });
+                          </script>
+
+                        </li>
+
+
+
                         <li class="learning-tree-item"><i class="icon-check"></i>Brainstorm variations on BarTracker app<span class="date-time">7/17</span></li>
+
+
+
                         <li class="learning-tree-item"><i class="icon-check-empty"></i>Meet with professor for data visulization feedback</li>
                         <li class="learning-tree-item"><i class="icon-check-empty"></i>Prioritize assumptions by risk</li>
                         <li class="learning-tree-item"><i class="icon-check-empty"></i>Design tests for risk assumptions</li>
@@ -2407,7 +2688,7 @@
   </div><!-- /wrapper -->   
 
   
-    <!-- JAVASCRIPTS -->
+    <!-- JAVASCRIPT -->
 
   <script type="text/javascript" src="js/cv_graph.js"></script>
       <script type="text/javascript">
@@ -2436,6 +2717,30 @@
     </script>
     <script type="text/javascript">
       $('#myTab a[href="#member2-progress"]').click(function (e) {
+        e.preventDefault();
+      $(this).tab('show');
+      })
+    </script>
+    <script type="text/javascript">
+      $('#myTab a[href="#caljames"]').click(function (e) {
+        e.preventDefault();
+      $(this).tab('show');
+      })
+    </script>
+    <script type="text/javascript">
+      $('#myTab a[href="#calchase"]').click(function (e) {
+        e.preventDefault();
+      $(this).tab('show');
+      })
+    </script>
+    <script type="text/javascript">
+      $('#myTab a[href="#calchris"]').click(function (e) {
+        e.preventDefault();
+      $(this).tab('show');
+      })
+    </script>
+    <script type="text/javascript">
+      $('#myTab a[href="#calall"]').click(function (e) {
         e.preventDefault();
       $(this).tab('show');
       })
