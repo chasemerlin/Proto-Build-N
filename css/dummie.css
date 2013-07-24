@@ -1,74 +1,98 @@
-/*** Universal ***/
+/*** Global ***/
 
-.box {
-	border: solid 1px red;
+.icon-check {
+  color: black;
 }
 
-/** Top-Nav Universal **/
+.icon-ok {
+  color: green;
+}
 
-.bottom-nav {
-	position: fixed;
-	bottom: 0;
-	right: 0;
-	height: 3em;
-	background-color: #16a085;
-	opacity: none;
-	z-index: 2;
+.icon-check {
+  color: black;
+}
+
+.icon-remove {
+  color: red;
+}
+
+
+/*** Helpers ***/
+
+.box {
+  border: solid 1px red;
 }
 
 .deliniate {
-	border: solid 2px black;
-	border-radius: 4px;
-	background-color: rgba(255, 255, 255, 0.8);
+  border: solid 2px black;
+  border-radius: 4px;
+  background-color: rgba(255, 255, 255, 0.8);
 }
 
+/*** Navbar ***/
+
+/* changed from '.bottom-nav' to '.nav' */
+.my-nav {
+  position: fixed;
+  top: 0;
+  right: 0;
+  height: 3em;
+  background-color: #16a085;
+  z-index: 2;
+}
+
+/* Navbar Current User */
 .user {
-	margin-bottom: 0.5em;
-	height: 3em;
+  margin-bottom: 0.5em;
+  height: 3em;
 }
 
 .user-item {
-	height: 3em;
+  height: 3em;
 }
 
 .user-image {
-	padding-left: 15%;
-	width: 10%;
+  padding-left: 15%;
+  width: 10%;
 }
 
 .user-name {
-	padding-bottom: 0.025em;
-	padding-left: 0.5em;
-	display: inline;
+  padding-bottom: 0.025em;
+  padding-left: 0.5em;
+  display: inline;
 }
 
 .user-level-number {
-	margin-left: 0.5em;
-	font-size: 24px;
-	color: white;
+  margin-left: 0.5em;
+  font-size: 24px;
+  color: white;
 }
 
-.user-level-bar {
-	padding-bottom: 0.025em;
-	padding-left: 0.5em;
-}
+/* Navbar Group Member User */
 
 .group {
-	margin-bottom: 0.5em;
-	height: 3em;
+  margin-bottom: 0.5em;
+  height: 3em;
 }
 
 .group-item {
-	height: 3em;
+  height: 3em;
 }
 
 .group-image {
-	width: 12.5%;
+  width: 12.5%;
 }
 
 .group-name {
-	padding-bottom: 0.025em;
-	display: inline;
+  padding-bottom: 0.025em;
+  display: inline;
+}
+
+/* Isn't being used but should be */
+.group-level-number {
+  margin-left: 0.5em;
+  font-size: 24px;
+  color: white;
 }
 
 .on {
@@ -76,99 +100,48 @@
 }
 
 .off {
-	opacity: 0.40;
-}
-
-.sick-list {
-	margin-top: 0.25em;
-	height: 7em;
-	background-color: rgba(255, 255, 255, 1.0);
-	border: solid 2px black;
-	border-radius: 4px;
-}
-
-.list {
-
+  opacity: 0.40;
 }
 
 .list-item-header {
-	padding-left: 2%;
-	background-color: rgba(255, 255, 255, 0.4);
-	border-bottom: solid 1px black;
-	color: #049cdb;
+  padding-left: 2%;
+  background-color: rgba(255, 255, 255, 0.4);
+  border-bottom: solid 1px black;
+  color: #049cdb;
 }
 
-.list-main {
-	height: 4.4em;
-	overflow: scroll;
-}
-
-.list-item {
-	border-bottom: solid 1px black;
-	color: #049cdb;
-}
-
-.skill-list {
-	list-style-type: none;
-}
-
-/* Calendar Section */ 
+/*** Calendar Section ***/ 
 
 .calendar {
-	margin-top: 2em;
+  margin-top: 2em;
+  padding-top: 30px;
 }
 
 .calendar-title {
-	border-bottom: solid 1px black;
+  text-align: center;
 }
 
 .current-day {
-	width: 2em;
-	height: 15em;
-	border: solid 2px black;
-	background-color: white;
-	overflow: scroll;
+  width: 2em;
+  height: 15em;
+  border: solid 2px black;
+  background-color: white;
+  overflow: scroll;
 }
 
-.span1.calendar-day-box {
-	margin-left: 0.2em;
-	margin-right: 0.2em;
+.current-day-title {
+  font: 46px;
 }
 
-.span6.current-day {
-	width: 47.4em;
-	margin-left: 0.2em;
-	margin-right: 0.2em;
-}
-
+/*This should be named descriptively */
 .font {
-	color: black;
-	display: inline;
-	font-size: 1.1em;
+  color: black;
+  display: inline;
+  font-size: 1.1em;
 }
 
-.center {
-	margin-left: 2em;
-}
-
-.span4.current-day-item {
-	margin-left: 0.2em;
-}
-
-.calendar-day-box {
-	height: 4em;
-	border: solid 2px black;
-	background-color: white;
-	text-decoration: line-through;
-	overflow: scroll;
-}
-
-.list-item-header-non {
-	font-size: 18px;
-	padding-left: 2%;
-	background-color: rgba(255, 255, 255, 0.4);
-	border-bottom: solid 1px black;
-	color: #049cdb;
+.calendar .current-day-item {
+  margin-left: 0.2em;
 }
 
 .day-list {
@@ -176,163 +149,151 @@
 }
 
 .day-item {
-	font: 4px;
-	border-bottom: solid 1px black;
+  font: 4px;
+  border-bottom: solid 1px black;
 }
 
-h6 {
-	font-size: 10px;
+.day-item h6 {
+  font-size: 16px;
+}
+
+/*** Calendar Task Modals ***/
+
+.completion {
+
+}
+
+.completion .pic-list li {
+  display: inline;
+  margin-left: 12%;
+}
+
+.completion .task-points-value {
+  font-size: 26px;
 }
 
 .comments {
-	height: 4em;
-	overflow: scroll;
+  height: 4em;
+  overflow: scroll;
 }
 
 .add-comments-button {
-	margin-left: 2%;
-}
-
-.comment-box {
-	margin-left: 4%;
+  margin-left: 2%;
 }
 
 .modal-comment-user {
-	color: red;
+  color: red;
 }
 
 .user-image-comment {
-	width: 2.5em;
+  width: 2.5em;
 }
 
-.current-day-title {
-	font: 46px;
-}
 
-/* Calendar Task Modals */
-
-
-.icon-ok {
-	color: green;
-}
-
-.icon-remove {
-	color: red;
-}
-
-.icon-check {
-	color: black;
-}
+/*** Project Input Task Modal **/
 
 h3.input-name {
-	display: inline;
+  display: inline;
 }
 
 .input-body {
-	margin-right: 3%;
+  margin-right: 3%;
 }
 
 .modal-member {
-	display: inline;
-	margin-left: 3%;
-	margin-right: 3%;
-	font-size: 18px;
-	color: #049cdb;
+  display: inline;
+  margin-left: 3%;
+  margin-right: 3%;
+  font-size: 18px;
+  color: #049cdb;
 }
 
 .modal-icon {
-	font-size: 24px;
-	margin-left: 9%;
+  font-size: 24px;
+  margin-left: 9%;
 }
 
 .modal-element {
-	margin-right: 9%;
+  margin-right: 9%;
 }
 
-.pic-list li {
-	display: inline;
-	margin-left: 12%;
-}
-
-.task-points-value {
-	font-size: 26px;
-}
-
-/* Graph Section */
+/*** Graph Section ***/
 
 .graph-box {
-	margin-top: 6em;
+  margin-top: 6em;
 }
 
 .graph-title {
-	border-bottom: solid 1px black;
+  border-bottom: solid 1px black;
 }
 
 .graph-tab {
-	color: #16a085;
+  color: #16a085;
 }
 
-/* Skills Section */
 
-.date-time {
-	color: #16a085;
-	font-weight: bold;
-	margin-left: 1.8%;
-}
+/** Project View **/
 
-.icons {
-	color: red;
-	padding-left: 1%;
-}
-
-.me {
-	color: red;
-}
-
-.skill-box {
+.tab-box {
 
 }
 
 .project-title {
-	color: #16a085;
-	display: inline;
+  color: #16a085;
+  display: inline;
 }
 
-.skill-title {
-	color: #16a085;}
+.tab-box .current-user {
+  background-color: rgba(74, 227, 247, 0.45);
+  border-radius: 6px;
+  padding: 0.5% 0.5% 8% 1%;
+}
 
 .learning-tree-item {
-	list-style: none;
+  list-style: none;
 }
 
-.current-user {
- 	background-color: rgba(74, 227, 247, 0.45);
- 	border-radius: 6px;
- 	padding: 0.5% 0.5% 8% 1%;
+.tab-box .icons {
+  color: red;
+  padding-left: 1%;
 }
 
 .overall-bar {
-	margin-top: 1%;
+  margin-top: 1%;
 }
 
-/* Team Section */
+.tab-box .date-time {
+  color: #16a085;
+  font-weight: bold;
+  margin-left: 1.8%;
+}
 
+
+/** Project View Modal **/
+
+
+
+/** Team Section **/
+
+.skill-title {
+  color: #16a085;
+}
 
 .user-title {
-	display: inline;
-	color: red;
+  display: inline;
+  color: red;
 }
 
 .percent {
-	margin-left: 1%;
-	color: black;
+  margin-left: 1%;
+  color: black;
 }
 
 .accordion-heading .accordion-toggle.input-button {
-	display: inline;
-	padding-top: 2%;
+  display: inline;
+  padding-top: 2%;
 }
 
 .input-button {
-	display: inline;
+  display: inline;
 }
