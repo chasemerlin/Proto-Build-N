@@ -310,21 +310,21 @@
 
         <div class="well span11 offset1 graph-box">
           <ul class="nav nav-tabs">
-            <li><a href="#project" data-toggle="tab"><h3 class="graph-tab">Project View</h3></a></li>
-            <li><a href="#team" data-toggle="tab"><h3 class="graph-tab">Skills View</h3></a>
+            <li class="tab-bleed-project"><a href="#project" data-toggle="tab"><h3 class="graph-tab">Project View</h3></a></li>
+            <li class="tab-bleed-skill"><a href="#team" data-toggle="tab"><h3 class="graph-tab">Skills View</h3></a>
             </li>
           </ul>
 
       <!-- /**TAB SECTION** -->
 
-    <div id="myTabContent" class="tab-content">
+    <div id="myTabContent" class="tab-content tabbed-body">
       <div class="tab-pane active" id="project">
 
       <!-- /**PROJECT SECTION** -->
 
             <div class="accordion tab-box" id="accordion1">
-              <h3 class="project-title">Proto Build</h3>
-              <div class="accordion-group">
+              <h3 class="project-title tab-bleed-project">Proto Build</h3>
+              <div class="accordion-group tab-bleed-project">
                 <div class="accordion-heading">
                   <a class="accordion-toggle input-button" data-toggle="collapse" data-parent="#accordion1" href="#collapseOne">
                     <h4 class="project-title">Brainstorm</h4></a>
@@ -783,35 +783,35 @@
 
       <!-- /**GRAPH SECTION** -->     
 
-            <h3 class="graph-title">Progress</h3>      
+            <h3 class="graph-title tab-bleed-skill">Progress</h3>      
             <ul class="nav nav-tabs">
-              <li><a href="#your-progress" data-toggle="tab"><h3 class="graph-tab">Your Progress</h3></a></li>
-              <li><a href="#member1-progress" data-toggle="tab"><h3 class="graph-tab">Chase's Progress</h3></a></li>
-              <li><a href="#member2-progress" data-toggle="tab"><h3 class="graph-tab">Chris's Progress</h3></a></li>
+              <li class="tab-bleed-graph"><a href="#your-progress" data-toggle="tab"><h3 class="graph-tab">Your Progress</h3></a></li>
+              <li class="tab-bleed-graph"><a href="#member1-progress" data-toggle="tab"><h3 class="graph-tab">Chase's Progress</h3></a></li>
+              <li class="tab-bleed-graph"><a href="#member2-progress" data-toggle="tab"><h3 class="graph-tab">Chris's Progress</h3></a></li>
             </ul>
 
-            <div id="myTabContent" class="tab-content">
-              <div class="tab-pane" id="your-progress">
-                <div class="graph">
-                  <canvas id="your-progress1" width="900" height="300"></canvas>
-                </div>
-              </div><!-- /Tab-Pane -->
-              <div class="tab-pane" id="member1-progress">
-                <div class="graph">
-                  <canvas id="member1-progress1" width="900" height="300"></canvas>
-                </div>
-              </div><!-- /Tab-Pane -->
-              <div class="tab-pane" id="member2-progress">
-                <div class="graph">
-                  <canvas id="member2-progress1" width="900" height="300"></canvas>
-                </div>
-              </div><!-- /Tab-Pane -->
-            </div><!-- /Tab-Content -->
+    <div id="myTabContent" class="tab-content">
+      <div class="tab-pane" id="your-progress">
+        <div class="graph tab-bleed-graph">
+          <canvas id="your-progress1" width="900" height="300"></canvas>
+        </div>
+      </div><!-- /Tab-Pane -->
+      <div class="tab-pane" id="member1-progress">
+        <div class="graph tab-bleed-graph">
+          <canvas id="member1-progress1" width="900" height="300"></canvas>
+        </div>
+      </div><!-- /Tab-Pane -->
+      <div class="tab-pane" id="member2-progress">
+        <div class="graph tab-bleed-graph">
+          <canvas id="member2-progress1" width="900" height="300"></canvas>
+        </div>
+      </div><!-- /Tab-Pane -->
+    </div><!-- /Tab-Content -->
 
       <!-- /**TEAM SECTION** -->
 
             <div class="accordion tab-box" id="accordion2">
-              <div class="accordion-group">
+              <div class="accordion-group tab-bleed-skill">
                 <div class="accordion-heading">
                   <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion8" href="#collapseEight">
                     <h4 class="skill-title">UI</h4>
@@ -2402,7 +2402,8 @@
           </div><!-- Tab-Pane-Team* -->
 
       </div><!-- Tab-Pane-All -->
-    </div><!-- Tab-Content -->
+    </div><!-- Tab-Content Team & Graph -->
+    </div><!-- Tab-Content All -->
   </div><!-- /wrapper -->   
 
   

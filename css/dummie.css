@@ -6,10 +6,10 @@
 
 /** Top-Nav Universal **/
 
-.bottom-nav {
+.my-nav {
 	position: fixed;
-	bottom: 0;
-	right: 0;
+	top: 0;
+	left: 0;
 	height: 3em;
 	background-color: #16a085;
 	opacity: none;
@@ -115,11 +115,11 @@
 /* Calendar Section */ 
 
 .calendar {
-	margin-top: 2em;
+	margin-top: 6em;
 }
 
 .calendar-title {
-	border-bottom: solid 1px black;
+	margin-left: 40%;
 }
 
 .current-day {
@@ -258,10 +258,31 @@ h3.input-name {
 	font-size: 26px;
 }
 
+/* Toggle Section */
+
+.tab-bleed-project {
+	border: solid 2px red;
+	border-radius: 4px;
+}
+
+.tab-bleed-skill {
+	border: solid 2px blue;
+	border-radius: 4px;
+}
+
+.tab-bleed-graph {
+	border: solid 2px green;
+	border-radius: 4px;
+}
+
+/* Project Section */
+
+
+
 /* Graph Section */
 
 .graph-box {
-	margin-top: 6em;
+
 }
 
 .graph-title {
@@ -314,9 +335,6 @@ h3.input-name {
 .overall-bar {
 	margin-top: 1%;
 }
-
-/* Team Section */
-
 
 .user-title {
 	display: inline;
