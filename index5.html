@@ -31,6 +31,11 @@
       $( "#datepicker" ).datepicker();
     });
     </script>
+    <script>
+    $(function() {
+      $( "#datepicker2" ).datepicker();
+    });
+    </script>
   
   </head>
 
@@ -89,7 +94,7 @@
 
             <h4 class="calendar-header"><i class="icon-arrow-left"></i>Thursday  7/24<i class="icon-arrow-right"></i></h4>
 
-            <p class="date-picker">Date: <input type="text" id="datepicker" /></p>
+            <p class="date-picker"><i class="icon-calendar"></i> <input type="text" id="datepicker" /></p>
 
               <ul class="nav nav-tabs">
                 <li id="jamesTab" class="active"><a href="#caljames" data-toggle="tab"><h3 class="font">James</h3></a></li>
@@ -117,7 +122,21 @@
                     <a href="#myModal2" role="button" class="" data-toggle="modal"><i class="icon-check"></i><h6 class="font">Make lean canvas for favorite two project ideas</h6><i class="icon-remove"></i><i class="icon-edit"></i></br><span class="weight">14%</span><span class="skill">SEM</span><span class="date-time">7/24</span></a>
                   </li>
                   <li class="day-item">
-                    <a href="#myModal4" role="button" class="" data-toggle="modal"><i class="icon-check-empty"></i><h6 class="font">Collab</h6><i class="icon-remove"></i><i class="icon-edit"></i></br><span class="weight">11%</span><span class="skill">PR</span></a>
+                    <a href="#myModal4" role="button" class="" data-toggle="modal"><i class="icon-check-empty"></i><h6 class="font">Collab</h6><i class="icon-remove"></i><i class="icon-edit"></i></br><span class="date-time">7/24</span><span class="weight">11%</span><span class="skill">PR</span>
+                    </a>
+                  </li>
+                  <li class="day-item day-item-added">
+                    <a><i class="icon-check-empty"></i><h6 class="font">|</h6><p class="date-picker"><i class="icon-calendar"></i> <input type="text" id="datepicker2" /><input class="added-task-weight" type="number" min="0" max="10" step="1" value="0" name="added-task-weight">
+                      <select class="modal-element added-task-skill">
+                        <option>UI</option>
+                        <option>UX</option>
+                        <option>SEO</option>
+                        <option>SEM</option>
+                        <option>PR</option>
+                      </select>
+                      <i class="icon-user"></i>
+                    </p><i class="icon-remove"></i><i class="icon-edit"></i></br>
+                    </a>
                   </li>
                 </ul>
                
