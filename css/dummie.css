@@ -144,7 +144,7 @@
 
 .current-day .nav {
 	margin-bottom: 5px;
-	padding-top: 10px;
+	padding-top: 15px;
 }
 
 .current-day li:first-child {
@@ -333,6 +333,15 @@ h6 {
 	font-size: 20px;
 	color: red;	
 	padding-left: 12px;
+}
+
+.calendar .icon-file {
+	color: black;
+font-weight: bold;
+margin-left: 3%;
+font-size: 1.4em;
+padding-top: 2.2%;
+float: left;
 }
 
 .date-picker {
