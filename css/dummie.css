@@ -126,6 +126,7 @@
 }
 
 .current-day {
+	position: relative;
 	width: 2em;
 	height: 25em;
 	border: solid 2px black;
@@ -186,6 +187,9 @@ h6.font {
 }
 
 .calendar-header {
+	position: absolute;
+	top: 1%;
+	left: 1%;
 	font-size: 38px;
 	color: #049cdb;
 	text-shadow: 1px 1px 3px #000;
@@ -262,20 +266,23 @@ h6 {
 }
 
 .nav-tabs, .nav-pills {
-    text-align:center;
+    text-align: right;
 }
 
 .calendar .icon-arrow-left {
-	margin-right: 10%;
-	margin-bottom: 3%;
 	font-size: 20px;
 	color: red;
 }
 
 .calendar .icon-arrow-right {
-	margin-left: 10%;
 	font-size: 20px;
 	color: red;	
+}
+
+.date-picker {
+	position: absolute;
+	top: 4%;
+	left: 2%;
 }
 
 /* Calendar Task Modals */
