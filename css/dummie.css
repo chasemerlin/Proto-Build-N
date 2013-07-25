@@ -4,6 +4,9 @@
 	border: solid 1px red;
 }
 
+/** Sidebar **/
+
+
 /** Top-Nav Universal **/
 
 .my-nav {
@@ -123,6 +126,10 @@
 	border-top: solid 2px black;
 	border-bottom: solid 2px black;
 	background-color: white;
+}
+
+.calendar .nav .active a {
+	
 }
 
 .current-day {
@@ -247,13 +254,6 @@ h6 {
 	color: blue;	
 }
 
-.link {
-	float: right;
-	margin-right: 2%;
-	color: blue;
-	text-decoration: underline;
-}
-
 .nav-tabs > li, .nav-pills > li {
     float:none;
     display:inline-block;
@@ -262,7 +262,7 @@ h6 {
 }
 
 .nav-tabs, .nav-pills {
-    text-align:center;
+    text-align:right;
 }
 
 .calendar .icon-arrow-left {
