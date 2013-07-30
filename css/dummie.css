@@ -152,7 +152,7 @@
 .current-day {
 	position: relative;
 	width: 2em;
-	height: 38em;
+	height: 32em;
 	border: solid 2px #7f8c8d;
 	background-color: white;
 	border-radius: 4px;
@@ -248,25 +248,22 @@ h6.font {
 }
 
 .day-list {
-
+	margin-bottom: 0px;
 }
 
 .day-item {
-	padding-top: 2.3%;
+	padding-top: 3%;
 	padding-bottom: 1.5%;
 	padding-left: 1.0%;
-	height: 80px;
+	height: 60px;
 	border-top: solid 1px black;
 }
 
-.day-item:first-child {
-	padding-top: 3%;
-}
 
 .day-item-added .date-picker {
 	position: absolute;
 	left: 62%;
-	top: 83%;
+	top: 82.5%;
 	font-size: 2.5em;
 	color: black;
 }
@@ -338,6 +335,7 @@ h6 {
 	font-size: 22px;
 	font-weight: 900;
 	color: #16a085;	
+
 }
 
 .nav-tabs > li, .nav-pills > li {
@@ -366,11 +364,10 @@ h6 {
 
 .calendar .icon-file {
 	color: gray;
-font-weight: bold;
-margin-left: 4%;
-font-size: 1.4em;
-padding-top: 2.2%;
-float: left;
+	font-weight: bold;
+	margin-left: 2%;
+	font-size: 1.1em;
+	float: none;
 }
 
 .date-picker {
@@ -432,8 +429,8 @@ p.testtooltip {
 .day-item .icon-edit {
 	float: right;
 	display: none;
-	margin-right: 1%;
-	margin-top: 1%;
+	margin-right: 0%;
+	margin-top: 0%;
 	font-size: 20px;
 	color: black;
 }
@@ -441,8 +438,7 @@ p.testtooltip {
 .day-item .icon-remove {
 	float: right;
 	display: none;
-	margin-right: 4%;
-	margin-top: 1%;
+	margin-top: 0%;
 	font-size: 20px;
 }
 
@@ -502,12 +498,16 @@ h3.input-name {
 
 /* Skills Section */
 
+.day-list .day-item:nth-child(1),
+.day-list .day-item:nth-child(2),
 .day-list .day-item:nth-child(3) {
 	padding-top: 3.4%;
 	padding-bottom: 0px;
 
 }
 
+.day-list .day-item:nth-child(1) .date-time,
+.day-list .day-item:nth-child(2) .date-time,
 .day-list .day-item:nth-child(3) .date-time {
 	color: #e74c3c;
 	float: none;
@@ -516,6 +516,8 @@ h3.input-name {
 	font-size: 0.88em;
 }
 
+.day-list .day-item:nth-child(1) .skill,
+.day-list .day-item:nth-child(2) .skill,
 .day-list .day-item:nth-child(3) .skill {
 	display: inline;
 	float: none;
@@ -523,6 +525,8 @@ h3.input-name {
 	padding: 0px;
 }
 
+.day-list .day-item:nth-child(1) .weight,
+.day-list .day-item:nth-child(2) .weight,
 .day-list .day-item:nth-child(3) .weight {
 	display: inline;
 	float: none;
@@ -530,26 +534,10 @@ h3.input-name {
 	padding: 7px;
 }
 
-.day-list .day-item:nth-child(2) .date-time {
-	color: #e74c3c;
-	font-weight: bold;
-	margin-left: 3%;
-	font-size: 1.4em;
-	padding-top: 2.2%;
-	float: left;
-}
-
 .day-list .day-item {
 	margin-right: 3%;
 }
 
-.day-list .day-item:first-child .date-time {
-	color: #e74c3c;
-	font-weight: bold;
-	margin-left: 1.8%;
-	font-size: 1.4em;
-	
-}
 
 .icons {
 	color: red;
